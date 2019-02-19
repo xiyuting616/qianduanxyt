@@ -3,8 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .box1{
+            background: #cccccc;
+            z-index: -1;
+        }
+        .box2{
+            background: #999999;
+            z-index: -2;
+        }
+        .box3{
+            background: #ffccdd;
+            z-index: 888;
+        }
+    </style>
 </head>
 <body>
-
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
 </body>
 </html>
