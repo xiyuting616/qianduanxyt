@@ -1,127 +1,116 @@
-#quick-menu .submenu {
+#header{
+    height: 32px;
+    background: #f2f2f2;
+    font-size: 12px;
+    line-height: 32px;
+    border-bottom: 1px solid #f2f2f2;
+
+}
+
+#login-info{
+    float: left;
+}
+
+#login-info a{
+    padding-left: 10px;
+}
+
+#login-info span, #login-info a,#quick-menu a{
+    color: #999999;
+}
+
+#login-info a:hover{
+    color: #ff0036;
+}
+
+#quick-menu{
+    float: right;
+}
+
+#quick-menu .menu{
+    float: left;
+    padding: 0 14px;
+    cursor: pointer;
+}
+
+#quick-menu .menu:hover a{
+    color: #ff0036;
+}
+
+#quick-menu .triangle{
+    position: relative;
+}
+
+#quick-menu .triangle:hover > a{
+    text-decoration: underline;
+}
+
+#quick-menu .icon-tianmaogouwuche{
+    color: #ff0036;
+    font-size: 14px;
+}
+
+#quick-menu .icon-shouji{
+    font-size: 14px;
+    color: #ff0036 ;
+}
+
+#quick-menu .icon-daohang{
+    font-size: 14px;
+    color: #ff0036;
+}
+
+#quick-menu .triangle{
+    position: relative;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0 1px;
+}
+
+#quick-menu .triangle:hover{
+    background: #ffffff;
+    border-style: solid;
+    border-color: #f2f2f2;
+    border-width: 0 1px;
+}
+
+#quick-menu .triangle:hover > a{
+    text-decoration: underline;
+}
+
+#quick-menu .triangle::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #bbbbbb transparent transparent transparent;
+    position: absolute;
+    top: 50%;
+    margin-top: -1.5px;
+    right: 2px;
+}
+
+#quick-menu .triangle:hover::after{
+    transform: rotate(180deg);
+    transform-origin: 3px 1.5px;
+    transition: transform 0.2s ease;
+}
+
+#quick-menu .triangle:hover .submenu{
+    display: block;
+}
+
+#quick-menu .submenu{
     position: absolute;
     top: 33px;
     left: -1px;
     padding: 0 10px;
     width: 74px;
+    border: 1px solid #eeeeee;
     border-style: solid;
-    border-color: #eee;
+    border-color: #f2f2f2;
     border-width: 0 1px 1px 1px;
-    background-color: #fff;
+    background-color: #ffffff;
     display: none;
 }
-
-#quick-menu .submenu a:hover {
-    color: #ff0036;
-    text-decoration: underline;
-}
-
-#quick-menu .phone {
-    position: relative;
-}
-
-#quick-menu .phone:hover .qr-code {
-    display: block;
-}
-
-#quick-menu .qr-code {
-    width: 175px;
-    height: 227px;
-    background: #fff;
-    position: absolute;
-    top: 30px;
-    left: -43px;
-    -webkit-box-shadow: 0 0 5px #aaa;
-    -moz-box-shadow: 0 0 5px #aaa;
-    box-shadow: 0 0 5px #aaa;
-    display: none;
-}
-
-#quick-menu .qr-code::after {
-    content: '';
-    border-width: 4px;
-    border-style: solid;
-    border-color: transparent transparent #fff transparent;
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: -8px;
-    left: 85px;
-}
-
-/* header结束 */
-
-
-/* side-bar 开始 */
-#side-bar {
-    width: 35px;
-    background: #000;
-    position: fixed;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-
-#side-bar .icon-shouji01 {
-    color: #fff;
-    float: left;
-    margin-top: 200px;
-    font-size: 30px;
-}
-
-#side-bar .vip {
-    width: 90px;
-    height: 30px;
-    background: #999999;
-    color: #fff;
-    position: absolute;
-    top: 215px;
-    left: -150px;
-    text-align: center;
-    line-height: 30px;
-    -webkit-transition: all .3sk ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
-    opacity: 0;
-    visibility: hidden;
-}
-
-#side-bar .content:hover .vip {
-    left: -90px;
-    opacity: 1;
-    visibility: visible;
-}
-
-#side-bar .arrow {
-    width: 10px;
-    height: 10px;
-    background: #999999;
-    position: absolute;
-    right: -5px;
-    top: 10px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-/* side-bar 结束 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
