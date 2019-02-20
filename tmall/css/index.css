@@ -118,3 +118,31 @@
     color: #ff0036;
     text-decoration: underline;
 }
+
+#quick-menu .phone{
+    position: relative;
+}
+
+#quick-menu .qr-code{
+    width: 175px;
+    height: 227px;
+    background: #ffffff;
+    position: absolute;
+    top: 30px;
+    left: -43px;
+    -webkit-box-shadow: 0 0 5px #aaaaaa;
+    -moz-box-shadow: 0 0 5px #aaaaaa;
+    box-shadow: 0 0 5px #aaaaaa;
+}
+
+#quick-menu .qr-code::after{
+    content: '';
+    border-width: 4px;
+    border-style: solid;
+    border-color: transparent transparent #ffffff transparent;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -8px;
+    left: 85px;
+}
