@@ -123,6 +123,10 @@
     position: relative;
 }
 
+#quick-menu .phone:hover .qr-code{
+    display: block;
+}
+
 #quick-menu .qr-code{
     width: 175px;
     height: 227px;
@@ -133,6 +137,7 @@
     -webkit-box-shadow: 0 0 5px #aaaaaa;
     -moz-box-shadow: 0 0 5px #aaaaaa;
     box-shadow: 0 0 5px #aaaaaa;
+    display: none;
 }
 
 #quick-menu .qr-code::after{
@@ -145,4 +150,60 @@
     position: absolute;
     top: -8px;
     left: 85px;
+}
+
+/*side-bar*/
+#side-bar{
+    width: 35px;
+    background: #000000;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#side-bar .icon-shouji{
+    color: #ffffff;
+    float: left;
+    margin-top: 300px;
+    font-size: 40px;
+}
+
+#side-bar .vip{
+    width: 90px;
+    height: 30px;
+    background: #999999;
+    color: #ffffff;
+    position: absolute;
+    top: 308px;
+    left: -150px;
+    text-align: center;
+    line-height: 30px;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#side-bar .content:hover .vip{
+    left: -90px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#side-bar .arrow{
+    width: 10px;
+    height: 10px;
+    background: #999999;
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
